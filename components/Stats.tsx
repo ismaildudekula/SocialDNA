@@ -52,7 +52,7 @@ const Stats: React.FC = () => {
              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/5 border border-white/10 text-dna-primary mb-6">
                 <TrendingUp className="w-8 h-8" />
             </div>
-            <h3 className="text-5xl font-display font-black mb-2 text-white">5</h3>
+            <h3 className="text-5xl font-display font-black mb-2 text-white">5X</h3>
             <p className="text-gray-400">Revenue acquired for the marketing spends</p>
           </motion.div>
 
