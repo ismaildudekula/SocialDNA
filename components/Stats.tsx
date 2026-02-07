@@ -10,7 +10,7 @@ const Stats: React.FC = () => {
   });
 
   return (
-    <section ref={ref} className="py-20 bg-dna-light text-white relative overflow-hidden border-y border-white/5">
+    <section ref={ref} className="py-20 bg-dna-dark text-white relative overflow-hidden border-y border-white/5">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '40px 40px' }}></div>
 
