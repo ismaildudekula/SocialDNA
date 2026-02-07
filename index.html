@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
+        darkMode: 'class',
         theme: {
           extend: {
             fontFamily: {
@@ -18,15 +19,16 @@
               dna: {
                 primary: '#f97316', // Orange 500
                 secondary: '#fb923c', // Orange 400
-                dark: '#1e293b', // Slate 800
-                light: '#fffbf5', // Warm light cream
+                dark: '#020617', // Slate 950
+                light: '#0f172a', // Slate 900
+                surface: '#1e293b', // Slate 800
                 accent: '#ea580c', // Orange 600
-                text: '#334155', // Slate 700
+                text: '#f8fafc', // Slate 50
+                muted: '#94a3b8', // Slate 400
               }
             },
             backgroundImage: {
               'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-              'hero-pattern': "url('https://www.transparenttextures.com/patterns/cubes.png')", // Subtle pattern placeholder
             }
           }
         }
@@ -34,8 +36,8 @@
     </script>
     <style>
       body {
-        background-color: #fffbf5;
-        color: #334155;
+        background-color: #020617;
+        color: #f8fafc;
         overflow-x: hidden;
       }
       .gradient-text {
@@ -43,8 +45,19 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
-      .btn-primary {
-        background: linear-gradient(to right, #f97316, #fb923c);
+      /* Custom Scrollbar for dark theme */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0f172a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #334155;
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #475569;
       }
     </style>
   <script type="importmap">

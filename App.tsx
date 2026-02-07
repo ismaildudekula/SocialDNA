@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="bg-dna-light min-h-screen font-sans selection:bg-orange-100 selection:text-orange-900">
+    <div className="bg-dna-dark min-h-screen font-sans selection:bg-orange-500 selection:text-white text-dna-text">
       <Navbar />
       <main>
         <Hero />
